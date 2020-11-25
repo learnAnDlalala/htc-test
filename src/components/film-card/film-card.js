@@ -6,7 +6,7 @@ const FilmCard = ({ src, title, info }) => {
     <div className="film-card">
       <div
         className="film-card__img"
-        style={{ backgroundImage: `url(${src})` }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL+`/${src}`})` }}
       >
         <div className="film-card__info">{info}</div>
       </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import './genre-card.css';
 
-const GenreCard = ({ style, title,src }) => {
+const GenreCard = ({ style, title, src }) => {
   return (
     <div className={`genre-card ${style}`}>
       <img
         className="genre-card__emoji emoji"
-        src={src}
-        alt = {style}
+        src={process.env.PUBLIC_URL + `/${src}`}
+        alt={style}
       />
       <div className="genre-card__title">{title}</div>
     </div>

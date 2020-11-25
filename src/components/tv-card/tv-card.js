@@ -6,7 +6,11 @@ const TvCard = ({ title, src, schedule }) => {
   return (
     <div className="tv-card row">
       <div className="tv-card__img">
-        <img src={src} alt={title} style={{ display: 'inline-block' }} />
+        <img
+          src={process.env.PUBLIC_URL + `/${src}`}
+          alt={title}
+          style={{ display: 'inline-block' }}
+        />
       </div>
       <div className="tv-card__body">
         <div className="tv-card__body__title">{title}</div>
@@ -29,4 +33,3 @@ const TvCard = ({ title, src, schedule }) => {
 };
 
 export default TvCard;
-

@@ -5,7 +5,11 @@ import './footer.css';
 const Footer = () => {
   return (
     <div className="footer row">
-      <img className="footer__logo" src="/htc_logo.png" alt="htc-logo" />
+      <img
+        className="footer__logo"
+        src={process.env.PUBLIC_URL + '/htc_logo.png'}
+        alt="htc-logo"
+      />
       <div className="footer__body">
         <div className="footer__body__information">
           <div className="footer__body__information__line">
