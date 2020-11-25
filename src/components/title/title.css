@@ -1,0 +1,13 @@
+.title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.title__text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: right;
+  color: #333333;
+}

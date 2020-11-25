@@ -1,0 +1,18 @@
+.films-page {
+  width: 100%;
+  margin-bottom: 72px;
+}
+.films__bar {
+  width: 100%;
+  overflow: auto;
+}
+.films__bar div:first-child {
+  margin-left: 0px;
+}
+.genre__bar {
+  width: 100%;
+  overflow: auto;
+}
+.genre__bar div:first-child {
+  margin-left: 0px;
+}

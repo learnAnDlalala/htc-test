@@ -1,0 +1,47 @@
+.genre-card {
+  width: 280px;
+  height: 208px;
+  border-radius: 6px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.comedy {
+  background: linear-gradient(127.83deg, #f2c94c 8.44%, #f29a4a 91.36%);
+}
+.genre-card:hover {
+  opacity: 0.8;
+}
+.horror {
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+.drama {
+  background: linear-gradient(127.83deg, #f2994a 8.44%, #eb5757 91.36%);
+}
+.fantasy {
+  background: linear-gradient(127.83deg, #56ccf2 8.44%, #2f80ed 91.36%);
+}
+.active {
+  opacity: 0.8;
+}
+.genre-card__emoji {
+  margin: 80px 120px 32px 120px;
+}
+.genre-card__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}

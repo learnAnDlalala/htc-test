@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1180px) {
+  .tv-card__img {
+    margin: 49px 60px 49px 60px;
+  }
+  .header__search {
+    margin: 11px 0px 4px 30px;
+  }
+  .header__name {
+    margin-left: 90px;
+  }
+  .header__name__input {
+    margin-left: 80px;
+  }
+  .header__button {
+    margin-left: 60px;
+  }
+  .footer__logo {
+    margin-left: 40px;
+  }
+  .films__bar {
+    justify-content: space-around;
+  }
+  .film-card {
+    margin: 0;
+  }
+  .genre__bar {
+    justify-content: space-around;
+  }
+  .genre-card {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
