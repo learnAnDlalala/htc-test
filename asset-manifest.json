@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/htc-test/static/css/main.826e4ecd.chunk.css",
+    "main.js": "/htc-test/static/js/main.efdf5877.chunk.js",
+    "main.js.map": "/htc-test/static/js/main.efdf5877.chunk.js.map",
+    "runtime-main.js": "/htc-test/static/js/runtime-main.841e4bbb.js",
+    "runtime-main.js.map": "/htc-test/static/js/runtime-main.841e4bbb.js.map",
+    "static/js/2.54ac8f06.chunk.js": "/htc-test/static/js/2.54ac8f06.chunk.js",
+    "static/js/2.54ac8f06.chunk.js.map": "/htc-test/static/js/2.54ac8f06.chunk.js.map",
+    "index.html": "/htc-test/index.html",
+    "static/css/main.826e4ecd.chunk.css.map": "/htc-test/static/css/main.826e4ecd.chunk.css.map",
+    "static/js/2.54ac8f06.chunk.js.LICENSE.txt": "/htc-test/static/js/2.54ac8f06.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.841e4bbb.js",
+    "static/js/2.54ac8f06.chunk.js",
+    "static/css/main.826e4ecd.chunk.css",
+    "static/js/main.efdf5877.chunk.js"
+  ]
+}
