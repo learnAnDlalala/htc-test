@@ -25,7 +25,6 @@ const App = () => {
     isLoggin: localStorage.getItem('login'),
     save: Boolean(localStorage.getItem('save')),
   });
-
   return (
     <>
       <Router>

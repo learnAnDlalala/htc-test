@@ -36,12 +36,21 @@ export const appReducer = (state, action) => {
 
     case 'LOGOUT':
       localStorage.setItem('login', '');
-      if (state.save) localStorage.setItem('save', state.save);
-      return {
-        ...state,
-        isLoggin: false,
-        name: '',
-      };
+      if (state.save) {
+        localStorage.setItem('save', true);
+        return {
+          ...state,
+          isLoggin: false,
+          name: state.name,
+        };
+      } else {
+        localStorage.setItem('save', '');
+        return {
+          ...state,
+          isLoggin: false,
+          name: '',
+        };
+      }
     default:
       return state;
       break;

@@ -3,8 +3,8 @@ import FilmCard from '../film-card';
 import GenreCard from '../genre-card';
 import Title from '../title';
 import { ServiceContext } from '../../services';
-
 import './film-page.css';
+
 const FilmPage = () => {
   const { getFilms, getGenres } = useContext(ServiceContext);
   const [films, setFilms] = useState([]);

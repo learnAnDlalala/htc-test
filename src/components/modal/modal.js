@@ -5,7 +5,7 @@ import { ContextApp } from '../../reducer/index';
 import './modal.css';
 const Modal = () => {
   const { state, dispatch } = useContext(ContextApp);
-  const [name, setName] = useState(state.name);
+  const [name, setName] = useState(state.save ? state.name : '');
   const [checked, setChecked] = useState(false);
   const login = () => {
     if (name !== '')
