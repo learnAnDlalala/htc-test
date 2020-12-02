@@ -62,21 +62,6 @@ const AuthForm = ({ closeModal }) => {
             setPassword(e.target.value);
           }}
         />
-        {/* <div className="input2">
-          <input
-            id="checkbox-1"
-            className="checkbox_input"
-            name="checkbox-1"
-            type="checkbox"
-            checked={checked}
-            onChange={() => {
-              setChecked(!checked);
-            }}
-          />
-          <label htmlFor="checkbox-1" className="checkbox_label">
-            Запомнить
-          </label>
-        </div> */}
         <div class="login__checkbox">
           <input
             id="checkbox-1"
