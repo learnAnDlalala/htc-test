@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/htc-test/static/css/main.02091f94.chunk.css",
-    "main.js": "/htc-test/static/js/main.5728d82d.chunk.js",
-    "main.js.map": "/htc-test/static/js/main.5728d82d.chunk.js.map",
+    "main.js": "/htc-test/static/js/main.4e24ba5c.chunk.js",
+    "main.js.map": "/htc-test/static/js/main.4e24ba5c.chunk.js.map",
     "runtime-main.js": "/htc-test/static/js/runtime-main.841e4bbb.js",
     "runtime-main.js.map": "/htc-test/static/js/runtime-main.841e4bbb.js.map",
     "static/js/2.d9c27827.chunk.js": "/htc-test/static/js/2.d9c27827.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.841e4bbb.js",
     "static/js/2.d9c27827.chunk.js",
     "static/css/main.02091f94.chunk.css",
-    "static/js/main.5728d82d.chunk.js"
+    "static/js/main.4e24ba5c.chunk.js"
   ]
 }
