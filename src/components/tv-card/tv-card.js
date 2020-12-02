@@ -17,7 +17,7 @@ const TvCard = ({ title, src, schedule }) => {
         <div className="tv-card__body__schedule">
           <ul>
             {schedule.map((el, index) => {
-              const style = index === 0 ? 'first' : '';
+              const style = index === 0 ? 'active' : '';
               return (
                 <li className={`${style} shedule__item`} key={index + 'tv'}>
                   <span>{el.date}</span>

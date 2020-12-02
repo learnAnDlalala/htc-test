@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 .active {
-  color: red;
+  color: #e5261e;
 }
 a {
   text-decoration: none;

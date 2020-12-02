@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { ContextApp } from '../../reducer/index';
-import { useClickOutsied, validation } from '../../utils';
 
 import './modal.css';
 

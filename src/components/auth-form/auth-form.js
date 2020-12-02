@@ -37,8 +37,8 @@ const AuthForm = ({ closeModal }) => {
         setPasswordMessage('Введите корректный пароль');
       }
     }
+    /*  e.preventDefault(); */
   };
-
   return (
     <form className="login column" onSubmit={login} ref={ref}>
       <div className="login__form">
@@ -62,7 +62,7 @@ const AuthForm = ({ closeModal }) => {
             setPassword(e.target.value);
           }}
         />
-        <div class="login__checkbox">
+        <div className="login__checkbox">
           <input
             id="checkbox-1"
             className="checkbox__input"
