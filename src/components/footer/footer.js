@@ -12,11 +12,11 @@ const Footer = () => {
       />
       <div className="footer__body">
         <div className="footer__body__information">
-          <div className="footer__body__information__line">
+          <div className="footer__information-line">
             426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса,
             246 (ДК «Металлург»)
           </div>
-          <div className="footer__body__information__line">
+          <div className="footer__information-line">
             +7 (3412) 93-88-61, 43-29-29
           </div>
         </div>

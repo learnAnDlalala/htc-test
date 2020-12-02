@@ -1,60 +1,45 @@
-import React, { useContext, useState } from 'react';
-import Button from '../button/';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { ContextApp } from '../../reducer/index';
+import { useClickOutsied, validation } from '../../utils';
 
 import './modal.css';
-const Modal = () => {
+
+const Modal = ({ children }) => {
   const { state, dispatch } = useContext(ContextApp);
-  const [name, setName] = useState(state.save ? state.name : '');
-  const [checked, setChecked] = useState(false);
-  const login = () => {
-    if (name !== '')
-      dispatch({
-        type: 'LOGIN',
-        payload: {
-          name: name,
-          save: checked,
-        },
-      });
-    else
-      dispatch({
-        type: 'SWITCH_MODAL',
-      });
+  useEffect(() => {
+    document.body.setAttribute('class', 'fixed');
+    return () => {
+      document.body.classList.remove('fixed');
+    };
+  }, []);
+
+  const keyPress = (e) => {
+    switch (e.which) {
+      case 27:
+        closeModal();
+        break;
+      default:
+        break;
+    }
   };
 
+  const closeModal = (e) => {
+    dispatch({
+      type: 'SWITCH_MODAL',
+    });
+  };
+  const app = 'sss';
   return (
-    <div className="modal">
-      <div className="login column">
-        <div className="login__form">
-          <div className="login__form__title">Вход</div>
-          <input
-            type="text"
-            placeholder="Логин"
-            className="name input"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-          />
-          <input type="text" placeholder="Пароль" className="password input" />
-          <div className="input2">
-            <input
-              id="checkbox-1"
-              className="checkbox-custom"
-              name="checkbox-1"
-              type="checkbox"
-              checked={checked}
-              onChange={() => setChecked(!checked)}
-            />
-            <label htmlFor="checkbox-1" className="checkbox-custom-label">
-              Запомнить
-            </label>
-          </div>
-        </div>
-        <Button className="login__form__button" click={login}>
-          Войти
-        </Button>
-      </div>
+    <div
+      className="modal"
+      id="modal"
+      tabIndex="0"
+      onKeyDown={keyPress}
+      app={app}
+    >
+      {React.Children.map(children, (child) => {
+        return React.cloneElement(child, { closeModal });
+      })}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import ActionPanel from '../action-panel/';
 import FilmPage from '../film-page';
 import TvPage from '../tv-page';
 import Modal from '../modal';
+import AuthForm from '../auth-form';
 
 import { ContextApp, initialState, appReducer } from '../../reducer';
 import { ServiceContext, service } from '../../services';
@@ -33,7 +34,7 @@ const App = () => {
             <ContextApp.Provider value={{ dispatch, state }}>
               <Header />
               <ActionPanel
-                actions={[{ Фильмы: '/films' }, { Телепередачи: '/tv' }]}
+                actions={[{ Фильмы: '/films' }, { Телеканалы: '/tv' }]}
               />
               <div className="main-content">
                 <ServiceContext.Provider value={service}>
@@ -46,7 +47,7 @@ const App = () => {
               </div>
               {state.isModalOpen &&
                 ReactDOM.createPortal(
-                  <Modal />,
+                  <Modal><AuthForm/></Modal>,
                   document.getElementById('portal')
                 )}
               <div />

@@ -5,9 +5,12 @@
   margin-top: 32px;
 }
 .header__logo {
+  width: 182px;
 }
 .logo__title {
-  margin: 6px 0px 10px 0px;
+  /* margin: 6px 0px 10px 0px; */
+  margin-top: 6px;
+  margin-bottom: 10px;
   padding-left: 11px;
   font-family: Rubik;
   font-style: normal;
@@ -24,7 +27,9 @@
   margin-left: 276px;
 }
 .header__search {
-  margin: 11px 0px 4px 207px;
+  margin-top: 11px;
+  margin-bottom: 4px;
+  margin-left: 207px;
   height: 25px;
   width: 402px;
 }

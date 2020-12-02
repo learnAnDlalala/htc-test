@@ -11,7 +11,7 @@ const SeacrchPanel = ({ className }) => {
           placeholder="Поиск..."
         ></input>
       </div>
-      <div className="search-panel__button">Поиск</div>
+      <div className="search-panel__button">Найти</div>
     </div>
   );
 };

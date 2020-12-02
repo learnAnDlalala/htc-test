@@ -1,6 +1,17 @@
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1190px) {
   .tv-card__img {
-    margin: 49px 60px 49px 60px;
+    width: 200px;
+  }
+  .tv-page {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .scrollhost {
+    width: 100%;
+  }
+  .header {
+    justify-content: space-around;
   }
   .header__search {
     margin: 11px 0px 4px 30px;
@@ -11,6 +22,7 @@
   .header__name__input {
     margin-left: 80px;
   }
+
   .header__button {
     margin-left: 60px;
   }
@@ -29,5 +41,49 @@
   .genre-card {
     margin: 0;
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .header__name {
+    margin-left: 0px;
+  }
+  .header__user {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  .title {
+    justify-content: center;
+  }
+  .action-panel {
+    padding-top: 30px;
+    margin-top: 65px;
+  }
+  .footer__body__information__line {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  
+  .header__button {
+    margin-right: 60px;
+    margin-top: 30px;
+  }
+  .tv-card {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+
+  }
+  .tv-card__body__title {
+    text-align: center;
+  }
+  .tv-card__body {
+    padding-left: 15px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .action-panel {
+    margin-top: 120px;
   }
 }

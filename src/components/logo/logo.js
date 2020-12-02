@@ -1,4 +1,5 @@
 import React from 'react';
+import './logo.css'
 const Logo = ({ className }) => {
   return (
     <div className={`${className} row`}>

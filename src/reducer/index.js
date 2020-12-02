@@ -16,6 +16,7 @@ export const appReducer = (state, action) => {
 
     case 'LOGIN':
       localStorage.setItem('user', action.payload.name);
+      localStorage.setItem('save',action.payload.save);
       localStorage.setItem('login', true);
       return {
         ...state,

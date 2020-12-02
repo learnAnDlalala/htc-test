@@ -1,9 +1,13 @@
 import React from 'react';
 import './button.css';
 
-const Button = ({ className, children, click }) => {
-  return (
-    <button className={`${className} button`} onClick={click}>
+const Button = ({ type = 'button', className, children, click }) => {
+  return click ? (
+    <button type="button" className={`${className} button`} onClick={click}>
+      {children}
+    </button>
+  ) : (
+    <button type="submit" className={`${className} button`}>
       {children}
     </button>
   );

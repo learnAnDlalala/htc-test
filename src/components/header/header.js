@@ -26,6 +26,7 @@ const UserBar = ({ currentName, onChangeName }) => {
         setName(e.target.value);
       }}
       onBlur={changeName}
+      autoFocus
     />
   ) : (
     <div className="header__name" onClick={showInput}>
@@ -42,13 +43,13 @@ const Header = () => {
       type: 'SWITCH_MODAL',
     });
   };
+
   const logOut = () => {
     dispatch({
       type: 'LOGOUT',
     });
   };
   const changeName = (newName) => {
-
     dispatch({
       type: 'CHANGE_NAME',
       payload: newName,
@@ -59,7 +60,7 @@ const Header = () => {
       <Logo className="header__logo" />
       <SearchPanel className="header__search"></SearchPanel>
       {state.isLoggin ? (
-        <>
+        <div className="header__user row">
           <UserBar currentName={state.name} onChangeName={changeName} />
           <div
             className="header__logout"
@@ -69,7 +70,7 @@ const Header = () => {
           >
             Выйти
           </div>
-        </>
+        </div>
       ) : (
         <Button className="header__button" click={switchModal}>
           Войти
