@@ -36,6 +36,6 @@
   margin-top: 12px;
 }
 .shedule__text {
-  word-break: normal;
+  word-break: break-word;
   margin-left: 21px;
 }
