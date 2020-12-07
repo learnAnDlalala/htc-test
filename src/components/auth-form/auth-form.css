@@ -34,7 +34,7 @@
   line-height: 19px;
   width: 232px;
   height: 25px;
-  margin-top: 20px;
+  margin-top: 19.6px;
   padding-bottom: 3.5px;
   border: none;
   border-bottom: 1px solid #333333;
@@ -51,12 +51,38 @@
   margin-top: 84px;
 }
 .login__checkbox {
-  margin-right: 124px;
-  margin-top: 23px;
+  margin-right: 131px;
+  margin-top: 21px;
   position: relative;
-  padding-left: 25px;
 }
-.checkbox__input {
+.checkbox__label {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + label span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  vertical-align: middle;
+  background: url('../../img/check-box.png') -19px top no-repeat;
+  cursor: pointer;
+}
+input[type='checkbox']:checked + label span {
+  background: url('../../img/check-box.png') 2px -5px no-repeat;
+}
+
+/* .checkbox__input {
   display: none;
 }
 
@@ -86,3 +112,4 @@
   text-align: center;
   line-height: 16px;
 }
+ */

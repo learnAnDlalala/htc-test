@@ -2,6 +2,7 @@ import React, { useContext, useState, useRef } from 'react';
 import Button from '../button/';
 import { ContextApp } from '../../reducer/index';
 import { useClickOutside } from '../../utils';
+
 import './auth-form.css';
 const AuthForm = ({ closeModal }) => {
   const ref = useRef();
@@ -37,7 +38,6 @@ const AuthForm = ({ closeModal }) => {
         setPasswordMessage('Введите корректный пароль');
       }
     }
-    /*  e.preventDefault(); */
   };
   return (
     <form className="login column" onSubmit={login} ref={ref}>
@@ -63,17 +63,12 @@ const AuthForm = ({ closeModal }) => {
           }}
         />
         <div className="login__checkbox">
-          <input
-            id="checkbox-1"
-            className="checkbox__input"
-            type="checkbox"
-            checked={checked}
-            onChange={() => {
-              setChecked(!checked);
-            }}
-          />
-          <label className="checkbox__label" htmlFor="checkbox-1">
-            Запомнить
+          <input type="checkbox" id="check-1" name="check-box" />
+          <label className="checkbox__input" htmlFor="check-1">
+            <span className="check-test"></span>
+            <label className="checkbox__label" htmlFor="check-1">
+              Запомнить
+            </label>
           </label>
         </div>
       </div>
