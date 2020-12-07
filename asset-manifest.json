@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/htc-test/static/css/main.4d002f2a.chunk.css",
-    "main.js": "/htc-test/static/js/main.177e8806.chunk.js",
-    "main.js.map": "/htc-test/static/js/main.177e8806.chunk.js.map",
+    "main.css": "/htc-test/static/css/main.61744de7.chunk.css",
+    "main.js": "/htc-test/static/js/main.84df9101.chunk.js",
+    "main.js.map": "/htc-test/static/js/main.84df9101.chunk.js.map",
     "runtime-main.js": "/htc-test/static/js/runtime-main.841e4bbb.js",
     "runtime-main.js.map": "/htc-test/static/js/runtime-main.841e4bbb.js.map",
     "static/js/2.d9c27827.chunk.js": "/htc-test/static/js/2.d9c27827.chunk.js",
     "static/js/2.d9c27827.chunk.js.map": "/htc-test/static/js/2.d9c27827.chunk.js.map",
     "index.html": "/htc-test/index.html",
-    "static/css/main.4d002f2a.chunk.css.map": "/htc-test/static/css/main.4d002f2a.chunk.css.map",
+    "static/css/main.61744de7.chunk.css.map": "/htc-test/static/css/main.61744de7.chunk.css.map",
     "static/js/2.d9c27827.chunk.js.LICENSE.txt": "/htc-test/static/js/2.d9c27827.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.841e4bbb.js",
     "static/js/2.d9c27827.chunk.js",
-    "static/css/main.4d002f2a.chunk.css",
-    "static/js/main.177e8806.chunk.js"
+    "static/css/main.61744de7.chunk.css",
+    "static/js/main.84df9101.chunk.js"
   ]
 }
