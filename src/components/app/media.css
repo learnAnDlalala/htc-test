@@ -8,7 +8,10 @@
     padding-right: 5px;
   }
   .scrollhost {
-    width: 100%;
+    width: 98.3%;
+  }
+  .scroll-bar {
+    margin-left: 1%;
   }
   .header {
     justify-content: space-around;
@@ -22,7 +25,9 @@
   .header__name__input {
     margin-left: 80px;
   }
-
+  .main-content {
+    width: 100%;
+  }
   .header__button {
     margin-left: 60px;
   }
